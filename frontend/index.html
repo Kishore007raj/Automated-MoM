@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Minutes of Meeting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Automated Minutes of Meeting</h1>
+  </header>
+  <main>
+    <section class="upload-section">
+      <label for="meeting-video">Upload Meeting Audio :</label>
+      <input type="file" id="meeting-video" accept="video/mp4, audio/wav, audio/mp3, aduio/flac, adui/aac, audio/m4a, audio/ogg, audio/x-ms-wma">
+      <button onclick="generateMinutes()">Generate Minutes</button>
+    </section>
+    <section class="result-section">
+      <p id="status-message">Your document will appear here after processing.</p>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Minutes of Meeting Generator</p>
+  </footer>
+
+  <script>
+    function generateMinutes() {
+      document.getElementById("status-message").textContent = "Processing your video...";
+    }
+  </script>
+</body>
+</html>
