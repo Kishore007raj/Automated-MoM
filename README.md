@@ -1,25 +1,170 @@
+# Automated MOM 🚀📝
 
-# Automated MOM
+## Project Overview  
+The **Automated MOM** project demonstrates the power of **Natural Language Processing (NLP)** and **Large Language Models (LLMs)** in automating and simplifying the creation and sharing of **Minutes of Meeting (MoM)**. 🎯 This tool transforms audio or video recordings of meetings into detailed and actionable summaries, saving time and effort for organizations.  
 
-The primary objective of this project is to demonstrate the potential of Natural Language Processing (NLP) and Large Language Models (LLMs) in automating and simplifying the process of generating and sharing Minutes of Meeting (MoM). This tool is designed to convert audio or video files into editable text conversations, which are then processed to produce detailed meeting summaries and MoM. The project aims to:
+Not only does it automate transcription, but it also provides editable MoM, giving users the flexibility to refine and finalize summaries as needed. ✨  
 
-Enable quick transcription of meetings into textual conversations.
-Summarize these conversations into actionable and editable MoM for organizational use.
-Provide a streamlined and efficient way to delegate and manage MoM emails with minimal manual intervention.
-The editable nature of the generated MoM ensures flexibility, allowing users to make adjustments before finalizing and using them as per their needs.
+---
 
-## Scope
-This project addresses the immediate need to automate transcription and summarization of meetings, significantly reducing manual effort in producing MoM. The tool currently supports:
+## Features ✍️  
+### 1. **Audio/Video Transcription 🎙️**  
+- Converts recorded meeting files into accurate text conversations.  
+- Supports a wide range of audio and video formats for seamless integration.  
 
-Audio/Video Transcription
-Converts recorded meetings into text conversations.
-Meeting Summarization
-Generates detailed and concise MoM from transcribed text.
-Outputs editable text for customization.
-Long-Term Vision:
-The project aspires to evolve into a real-time web application capable of:
+### 2. **Meeting Summarization 📋**  
+- Processes transcriptions into concise and detailed MoM.  
+- Provides editable summaries for customization before sharing or archiving.  
 
-Attending live meetings on behalf of the user.
-Providing real-time transcriptions and MoM during or after meetings.
-By beginning with transcription and summarization, the project lays the groundwork for achieving its broader goal of enabling fully automated meeting assistance for organizations.
+### 3. **Streamlined MoM Management 📤**  
+- Simplifies the process of generating and delegating MoM emails.  
+- Reduces manual intervention, saving time and minimizing errors.  
 
+---
+
+## Long-Term Vision 🌟  
+The project aspires to evolve into a **real-time meeting assistant** capable of:  
+- Attending live meetings on behalf of the user. 🤖  
+- Generating real-time transcriptions and summaries. ⏱️  
+- Seamlessly integrating with organizational workflows for automated meeting management. 📊  
+
+---
+
+## Tech Stack 🛠️  
+- **Programming Language**: 
+    - **Python** 
+    - **HTML, CSS, JavaScript**
+- **Key Libraries/Frameworks**:  
+  - **Whisper**: For high-quality transcription. 🎧  
+  - **PyTorch**: Supports Whisper model implementation. 🔥
+  - **Flask**: For web application development. 🌐  
+  - **FFmpeg**: Enables processing of audio/video files. 🎥  
+  - **NLP frameworks**: For text processing and summarization. 🧠  
+- **Development Tools**: PyCharm, VS Code, GitHub for version control.  
+
+---
+
+# Installation Guide for Audio Transcription and MoM Summarizer
+
+Follow these steps to set up and run the project on your local machine.
+
+---
+
+## Prerequisites
+Before starting, ensure the following are installed on your system:
+1. **Python 3.11 or later**
+2. **pip (Python package installer)**
+3. **FFmpeg** (required for audio processing by Whisper)
+
+---
+
+## Steps to Install FFmpeg
+
+### Windows
+1. Download and install [FFmpeg](https://ffmpeg.org/download.html).
+2. Add the downloaded `ffmpeg.exe` to your PATH environment variable.
+
+### Linux (Ubuntu/Debian)
+```bash
+sudo apt update
+sudo apt install ffmpeg
+```
+
+### macOS
+```bash
+brew install ffmpeg
+```
+
+
+---
+## Project Setup 🛠️
+1. **Fork the repository**
+
+   You can fork it by clicking the **"Fork"** button on the top right of the page.
+
+
+2. **Clone the Repository**:  
+   ```bash  
+   git clone https://github.com/hpriyankaa/Automated-MoM.git 
+   ```  
+3. **Navigate to the Project Directory**:  
+   ```bash  
+   cd automated-mom  
+   ```  
+4. **Install Dependencies**:  
+   ```bash  
+   pip install -r requirements.txt  
+   ```  
+5. **Set Up Environment Variables**:
+Create a `.env` file in the project directory and add the following:
+    ```bash
+    GROQ_API_KEY=your_groq_api_key
+    ```
+Replace `your_groq_api_key` with your actual Groq API key for quicker summarization of the transcription.
+
+6. **Verify Installation**:
+Run the following command to verify all dependencies:
+    ```bash
+    python -m pip list
+    ```
+    
+Ensure the following packages are listed:
+- `openai-whisper`
+- `python-docx`
+- `python-dotenv`
+- `llama-index`
+- `huggingface-hub`
+- `nest-asyncio`
+- `torch`
+- `ffmpeg-python`
+
+---
+## Usage Guide 💡  
+1. **Upload** an audio or video file to the tool. 🎵  
+2. The tool **transcribes** the recording into text conversations. 📄  
+3. **Review and edit** the transcription (if needed). ✏️  
+4. Generate a **summarized MoM** based on the transcribed text. 📋  
+5. **Customize and export** the MoM in your preferred format. 💾  
+
+---
+
+## Future Enhancements 🌐  
+- **Real-Time Transcription**: Live transcription during meetings. 🕒  
+- **Cloud Integration**: Save and access transcriptions/MoM from the cloud. ☁️  
+- **Multilingual Support**: Transcribe and summarize meetings in multiple languages. 🌍  
+- **AI-Powered Insights**: Highlight key decisions, action items, and deadlines from conversations. 🎯  
+
+---
+
+## Contribution 🤝  
+We welcome contributions from the community! 🧑‍💻  
+
+To contribute:  
+1. Fork the repository. 
+2. Create a new branch:  
+   ```bash  
+   git checkout -b feature-name  
+   ```  
+3. Commit your changes and push:  
+   ```bash  
+   git commit -m "Added feature-name"  
+   git push origin feature-name  
+   ```  
+4. Submit a pull request. ✅  
+
+---
+
+## License 📜  
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.  
+
+---
+
+## Contact 📬  
+For questions, feedback, or support, reach out:  
+**[Priyanka](https://github.com/your-github-profile]**  
+📧 Email: [your-email@example.com]  
+🐙 GitHub: [your-github-profile](https://github.com/your-profile)  
+
+---
+
+By automating transcription and summarization, **Automated MOM** is set to revolutionize meeting management, enabling organizations to focus on productivity while leaving the documentation to AI. 💼✨
