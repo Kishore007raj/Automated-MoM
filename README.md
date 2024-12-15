@@ -7,7 +7,7 @@ Not only does it automate transcription, but it also provides editable MoM, givi
 
 ---
 
-## Features ✍️  
+# Features 😎 
 ### 1. **Audio/Video Transcription 🎙️**  
 - Converts recorded meeting files into accurate text conversations.  
 - Supports a wide range of audio and video formats for seamless integration.  
@@ -22,7 +22,7 @@ Not only does it automate transcription, but it also provides editable MoM, givi
 
 ---
 
-## Long-Term Vision 🌟  
+# Long-Term Vision 🤘 
 The project aspires to evolve into a **real-time meeting assistant** capable of:  
 - Attending live meetings on behalf of the user. 🤖  
 - Generating real-time transcriptions and summaries. ⏱️  
@@ -30,7 +30,7 @@ The project aspires to evolve into a **real-time meeting assistant** capable of:
 
 ---
 
-## Tech Stack 🛠️  
+# Tech Stack 🛠️  
 - **Programming Language**: 
     - **Python** 
     - **HTML, CSS, JavaScript**
@@ -44,13 +44,11 @@ The project aspires to evolve into a **real-time meeting assistant** capable of:
 
 ---
 
-# Installation Guide for Audio Transcription and MoM Summarizer
+# Installation Guide for Audio Transcription and MoM Summarizer 🫡
 
 Follow these steps to set up and run the project on your local machine.
 
----
-
-## Prerequisites
+## Step-1: Prerequisites
 Before starting, ensure the following are installed on your system:
 1. **Python 3.11 or later**
 2. **pip (Python package installer)**
@@ -58,7 +56,7 @@ Before starting, ensure the following are installed on your system:
 
 ---
 
-## Steps to Install FFmpeg
+## Step-2: How to Install FFmpeg
 
 ### Windows
 1. Download and install [FFmpeg](https://ffmpeg.org/download.html).
@@ -77,7 +75,7 @@ brew install ffmpeg
 
 
 ---
-## Project Setup 🛠️
+## Step-3: Project Setup 🛠️
 1. **Fork the repository**
 
    You can fork it by clicking the **"Fork"** button on the top right of the page.
@@ -119,7 +117,7 @@ Ensure the following packages are listed:
 - `ffmpeg-python`
 
 ---
-## Usage Guide 💡  
+# Usage Guide 🤔  
 1. **Upload** an audio or video file to the tool. 🎵  
 2. The tool **transcribes** the recording into text conversations. 📄  
 3. **Review and edit** the transcription (if needed). ✏️  
@@ -128,7 +126,8 @@ Ensure the following packages are listed:
 
 ---
 
-## Future Enhancements 🌐  
+# Future Enhancements 🤩 
+
 - **Real-Time Transcription**: Live transcription during meetings. 🕒  
 - **Cloud Integration**: Save and access transcriptions/MoM from the cloud. ☁️  
 - **Multilingual Support**: Transcribe and summarize meetings in multiple languages. 🌍  
@@ -136,7 +135,7 @@ Ensure the following packages are listed:
 
 ---
 
-## Contribution 🤝  
+# Contribution 🤝  
 We welcome contributions from the community! 🧑‍💻  
 
 To contribute:  
@@ -154,16 +153,14 @@ To contribute:
 
 ---
 
-## License 📜  
+# License 📜  
 This project is licensed under the **MIT License**. See the `LICENSE` file for details.  
 
 ---
 
-## Contact 📬  
+# Contact 📬  
 For questions, feedback, or support, reach out:  
 
   - [Priyankaa](https://github.com/hpriyankaa)
-  - [Kishoreraj](https://github.com/Kishoreraj)
+  - [Kishoreraj](https://github.com/Kishore007raj)
 ---
-
-By automating transcription and summarization, **Automated MOM** is set to revolutionize meeting management, enabling organizations to focus on productivity while leaving the documentation to AI. 💼✨
