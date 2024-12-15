@@ -1,0 +1,9 @@
+openai-whisper #audio transcription
+python-docx #word doc generation
+llama-index #summary generation
+huggingface-hub #embeddings
+nest-asyncio #smooth async functions
+ffmpeg-python #video processing
+torch #pytorch
+torchaudio #pytorch
+torchvision #pytorch
