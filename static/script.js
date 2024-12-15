@@ -16,8 +16,10 @@ function generateMinutes() {
   const file = fileInput.files[0];
   const validFormats = [
     "video/mp4",
+    "audio/mp4",
     "audio/wav",
     "audio/mp3",
+    "audio/mp4",
     "audio/flac",
     "audio/aac",
     "audio/m4a",
@@ -34,22 +36,31 @@ function generateMinutes() {
   // Update the status message
   statusMessage.textContent = "Processing your file. Please wait...";
 
-  // Simulate a processing delay
-  setTimeout(() => {
-    // Simulate fetching processed document URL from the backend
-    const fakeDocumentUrl = "https://example.com/minutes.pdf"; // Replace with backend-generated URL
+  const formData = new FormData();
+  formData.append("meeting-video", file);
 
-    // Show success message and display the document
-    statusMessage.textContent = "Processing complete! Your minutes of meeting document is ready.";
-    documentViewer.src = fakeDocumentUrl;
-    documentViewer.style.display = "block";
-
-    // Provide download link
-    const downloadLink = document.createElement("a");
-    downloadLink.href = fakeDocumentUrl;
-    downloadLink.textContent = "Download Minutes of Meeting";
-    downloadLink.style.display = "block";
-    downloadLink.style.marginTop = "10px";
-    statusMessage.appendChild(downloadLink);
-  }, 2000);
+  // Make AJAX request to Flask backend
+  fetch('/generate', {
+    method: 'POST',
+    body: formData
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      // Show success message and display the document download link
+      statusMessage.textContent = "Processing complete! Your minutes of meeting document is ready.";
+      const downloadLink = document.createElement("a");
+      downloadLink.href = data.docx_url;
+      downloadLink.textContent = "Download Minutes of Meeting";
+      downloadLink.style.display = "block";
+      downloadLink.style.marginTop = "10px";
+      statusMessage.appendChild(downloadLink);
+    } else {
+      statusMessage.textContent = "There was an error processing your file. Please try again.";
+    }
+  })
+  .catch(error => {
+    statusMessage.textContent = "An error occurred. Please try again.";
+    console.error(error);
+  });
 }
