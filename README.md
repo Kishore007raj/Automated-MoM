@@ -107,7 +107,7 @@ Run the following command to verify all dependencies:
     ```bash
     python -m pip list
     ```
-    
+
 Ensure the following packages are listed:
 - `openai-whisper`
 - `python-docx`
@@ -140,7 +140,7 @@ Ensure the following packages are listed:
 We welcome contributions from the community! 🧑‍💻  
 
 To contribute:  
-1. Fork the repository. 
+1. Fork the given repository. 
 2. Create a new branch:  
    ```bash  
    git checkout -b feature-name  
@@ -161,10 +161,9 @@ This project is licensed under the **MIT License**. See the `LICENSE` file for d
 
 ## Contact 📬  
 For questions, feedback, or support, reach out:  
-**[Priyanka](https://github.com/your-github-profile]**  
-📧 Email: [your-email@example.com]  
-🐙 GitHub: [your-github-profile](https://github.com/your-profile)  
 
+  - [Priyankaa](https://github.com/hpriyankaa)
+  - [Kishoreraj](https://github.com/Kishoreraj)
 ---
 
 By automating transcription and summarization, **Automated MOM** is set to revolutionize meeting management, enabling organizations to focus on productivity while leaving the documentation to AI. 💼✨
