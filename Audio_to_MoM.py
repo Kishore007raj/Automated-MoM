@@ -78,7 +78,7 @@ def main():
     doc = Document()
     doc.add_heading("Minutes Of Meeting", level=1)
     doc.add_paragraph(summary_text)  # Add the generated summary as content.
-    doc.save("MoM.docx")
+    doc.save("outputs/MoM.docx")
     print("Summary saved as 'MoM.docx'.")
 
 if __name__ == "__main__":
