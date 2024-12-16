@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Minutes of Meeting</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content-wrapper">
+        <header>
+            <h1>Automated Minutes of Meeting</h1>
+        </header>
+        <main>
+            <section class="upload-section">
+                <form action="/generate_minutes" method="POST" enctype="multipart/form-data">
+                    <label for="audio_file">Upload Meeting Audio:</label>
+                    <input type="file" id="audio_file" name="audio_file" accept="audio/*" required>
+                    <button type="submit">Generate Minutes</button>
+                </form>
+            </section>
+            <section class="result-section">
+                {% if docx_path %}
+                    <p>Your Minutes of Meeting document is ready!</p>
+                    <a href="{{ url_for('download_file', filename=docx_path) }}" target="_blank">Download MoM (Word Doc)</a>
+                {% endif %}
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Minutes of Meeting Generator</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
